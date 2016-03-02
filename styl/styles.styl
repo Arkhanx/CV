@@ -1,0 +1,86 @@
+//out:../css/styles.css
+@import url(../fonts/glyphicons-halflings-regular.ttf);
+@import url(https:"//fonts.googleapis.com/css?family=Roboto:400,300,700");
+@import url(https:"//fonts.googleapis.com/css?family=Open+Sans:400,600,300");
+
+#nav.affix
+    position fixed
+    top 0
+    width 100%
+    z-index 10
+
+
+body
+  font-family Roboto
+  padding-bottom 100em
+  min-height: 100%;
+  margin: 0;
+
+.hola
+  background-color #CCC
+.section
+  min-height 100vh
+.header
+  background-color rgb(86, 144, 187)
+  width 100%
+
+.perfilgrande
+  width 10em
+  height 10em
+  position absolute
+  top -5em
+
+.perfilpequeno
+  width 2.5em
+  height 2.5em
+  position absolute
+  top .1em
+  &__img
+    width 100%
+    height 100%
+    z-index 100
+
+.texto
+  color red
+  position absolute
+  left 3.4em
+  top .4em
+  text-align center
+  p
+    color rgb(124, 124, 124)
+
+.navbar-header
+  position relative
+
+.caruso
+  max-height 20em
+  width 100%
+
+
+.imagen__modal
+  position relative
+  top 8em
+
+
+.habilidades
+  padding-top 10em
+  // position relative
+  // top 50%
+  // transform translateY(-50%)
+  &__item
+    margin 3em 0
+    text-align center
+    i
+      font-size 5em
+      transition all .2s
+      &:hover
+        font-size 6em
+
+.informacion
+  background-color rgba(#00bfd2, 0.44)
+
+  &__item
+    margin 3em 0
+    text-align center
+    i
+      font-size 5em

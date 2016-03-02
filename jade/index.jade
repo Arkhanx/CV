@@ -1,0 +1,118 @@
+//output:../index.html
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel="icon", type="image/ico", href="img/icon.ico")
+    link(rel="stylesheet", href="css/bootstrap.min.css")
+    link(rel="stylesheet", href="css/fontello.css")
+    link(rel="stylesheet", href="css/styles.css")
+    title Curriculum Vitae
+  body#Page(data-spy="scroll" data-target=".navbar" data-offset="60")
+    
+    .section#inicio
+      header.header#header
+        #carousel-evercaro.carousel.slide(data-ride="carousel")
+          ol.carousel-indicators
+            li(data-target="#carousel-evercaro", data-slide-to="0", class="active")
+            li(data-target="#carousel-evercaro", data-slide-to="1")
+            li(data-target="#carousel-evercaro", data-slide-to="2")
+            li(data-target="#carousel-evercaro", data-slide-to="3")
+          .carousel-inner(role="listbox")
+            .item.active
+              img.caruso(src="img/portada.png", alt="")
+            .item
+              img.caruso(src="img/slide1.jpg", alt="")
+            .item
+              img.caruso(src="img/slide2.jpg", alt="")
+            .item
+              img.caruso(src="img/slide3.jpg", alt="")
+      
+      nav#nav.navbar-default.navbar-static-top(role="navigation")
+        .navbar-header
+          #grande.navbar-brand.perfilgrande.hidden-xs
+            .thumbnail
+              a(href="#", data-toggle="modal", data-target="#miprimermodal")
+                img(src="img/perfil.jpg")
+          #pequeno.navbar-brand.visible-xs 
+            .perfilpequeno
+              img.img-circle.perfilpequeno__img(src="img/perfil.jpg")
+            .texto
+              a(href="#", data-toggle="modal", data-target="#miprimermodal") Ever Caro
+                p @efcaro91
+              .modal.fade#miprimermodal
+                .modal-dialog
+                  img.imagen__modal.col-xs-10.col-xs-offset-1(src="img/perfil.jpg")
+          button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
+            span.sr-only Desplegar navegación
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        .collapse.navbar-collapse.navbar-ex1-collapse.navegador
+          ul.nav.navbar-nav.navbar-right.subMenu
+            li
+              a(href="#inicio") Inicio
+            li
+              a(href="#informacion") Información Personal
+            li
+              a(href="#estudios") Estudios Realizados
+            li
+              a(href="#experiencia") Experiencia Laboral
+      
+      .container-fluid
+        .row.habilidades
+          .habilidades__item.col-sm-4
+            i.icon-desktop
+            h4 Mantenimiento de computadores.
+            p Más de seis años de experiencia en mantenimiento de equipos computacionales.
+          .habilidades__item.col-sm-4
+            i.icon-network
+            h4 Instalación de redes.
+            p Más de seis años de experiencia en mantenimiento de equipos computacionales.
+          .habilidades__item.col-sm-4
+            i.icon-art-gallery
+            h4 Diseño de paginas web.
+            p Más de seis años de experiencia en mantenimiento de equipos computacionales.
+            
+    #informacion.container-fluid.section
+      .row.informacion
+        .informacion__item.col-sm-4
+          i.icon-desktop
+          h4 Mantenimiento de computadores.
+          p Más de seis años de experiencia en mantenimiento de equipos computacionales.
+        .informacion__item.col-sm-4
+          i.icon-network
+          h4 Instalación de redes.
+          p Más de seis años de experiencia en mantenimiento de equipos computacionales.
+          
+    #estudios.container-fluid.section
+      .row.informacion
+        .informacion__item.col-sm-4
+          i.icon-desktop
+          h4 Mantenimiento de computadores.
+          p Más de seis años de experiencia en mantenimiento de equipos computacionales.
+        .informacion__item.col-sm-4
+          i.icon-network
+          h4 Instalación de redes.
+          p Más de seis años de experiencia en mantenimiento de equipos computacionales.
+          
+    #experiencia.container-fluid.section
+      .row.informacion
+        .informacion__item.col-sm-4
+          i.icon-desktop
+          h4 Mantenimiento de computadores.
+          p Más de seis años de experiencia en mantenimiento de equipos computacionales.
+        .informacion__item.col-sm-4
+          i.icon-network
+          h4 Instalación de redes.
+          p Más de seis años de experiencia en mantenimiento de equipos computacionales.
+    
+    
+    
+    script(src="js/jquery.js")
+    script(src="js/bootstrap.min.js")
+    script(src="js/jquery.nav.js")
+    script(src="js/script.js")
+          
+    
